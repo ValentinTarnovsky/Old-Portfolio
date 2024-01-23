@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Valentin Tarnovsky">
+    <meta name="description" content="Valentin Tarnovsky Portfolio">
+    <title>Valentin Tarnovsky | Portfolio</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+    <!-- Fade Scrolling -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+    <!--=============== HEADER ===============-->
+    <header class="header">
+        <nav class="nav container">
+            <div class="nav__data">
+                <a href="#" class="nav__logo" id="logo">
+                    <i class="ri-code-box-fill"></i> VALENTIN
+                </a>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-menu-line nav__burger"></i>
+                    <i class="ri-close-line nav__close"></i>
+                </div>
+            </div>
+
+            <!--=============== NAV MENU ===============-->
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li><a href="#about" class="nav__link">About Me</a></li>
+
+                    <li><a href="#skills" class="nav__link">Skills</a></li>
+
+                    <li><a href="#projects" class="nav__link" id="nav__link__last">Projects</a></li>
+
+                    <!--=============== DROPDOWN 1 ===============-->
+                    <li class="dropdown__item">
+                        <div class="nav__link">
+                            <i class="ri-moon-fill"></i> <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                        </div>
+
+                        <ul class="dropdown__menu">
+                            <li>
+                                <a href="#" class="dropdown__link">
+                                    <i class="ri-moon-fill"></i> Dark
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="dropdown__link">
+                                    <i class="ri-sun-fill"></i> Light
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+
+                    <!--=============== DROPDOWN 2 ===============-->
+                    <li class="dropdown__item">
+                        <div class="nav__link">
+                            En <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                        </div>
+
+                        <ul class="dropdown__menu">
+                            <li>
+                                <a href="#" class="dropdown__link">
+                                    English
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="dropdown__link">
+                                    Spanish
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="scroll-line"></div>
+    </header>
+    <main class="main">
+        <div class="home container">
+            <div class="home__text">
+                <div class="home__text__cont">
+                    <p><span>Hello!</span></p>
+                    <p>I'm <span>Valentin</span></p>
+                    <p><span>Tarnovsky</span></p>
+                    <p>Web Developer...</p>
+                </div>
+            </div>
+        </div>
+        <div class="about container spacing" id="about" data-aos="fade-up">
+            <h3 class="title">About Me</h3>
+            <div class="about__cont">
+                <div class="about__cont__table">
+                    <table>
+                        <tr>
+                            <td class="item">Name:</td>
+                            <td class="subitem">Valentin Tarnovsky</td>
+                        </tr>
+                        <tr>
+                            <td class="item">Age:</td>
+                            <td class="subitem">21</td>
+                        </tr>
+                        <tr>
+                            <td class="item">Country:</td>
+                            <td class="subitem">Argentina</td>
+                        </tr>
+                        <tr>
+                            <td class="item">Languages:</td>
+                            <td class="subitem">Spanish & English</td>
+                        </tr>
+                        <tr>
+                            <td class="item">Pation:</td>
+                            <td class="subitem">Coding & Training</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="about__cont__text">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt vero voluptatem deleniti.
+                        Eaque amet, ducimus
+                        repellendus ipsam itaque esse a id expedita perferendis error earum odio aliquid aperiam
+                        inventore eveniet
+                        mollitia nobis laboriosam nam consequatur in molestias, blanditiis nostrum. Magni.</p>
+                </div>
+            </div>
+            <div class="about__cv">
+                <a href="#" download>
+                    <div class="animated-button">
+                        download cv
+                        <span></span><span></span><span></span><span></span>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="skills container spacing" id="skills" data-aos="fade-up">
+            <h3 class="title">Skills</h3>
+            <div class="skills__box">
+                <div class="skills__cont">
+                    <div class="skill">
+                        <div class="skill__name"><i class="fa-brands fa-html5"></i><span>HTML</span></div>
+                        <div class="skill__bar">
+                            <div class="skill__per" per="99%" style="max-width:99%"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <div class="skill__name"><i class="fa-brands fa-css3-alt"></i><span>CSS</span></div>
+                        <div class="skill__bar">
+                            <div class="skill__per" per="85%" style="max-width:85%"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <div class="skill__name"><i class="fa-brands fa-sass"></i><span>Sass</span></div>
+                        <div class="skill__bar">
+                            <div class="skill__per" per="75%" style="max-width:75%"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <div class="skill__name"><i class="fa-brands fa-js"></i><span>Javascript</span></div>
+                        <div class="skill__bar">
+                            <div class="skill__per" per="60%" style="max-width:60%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills__cont">
+                    <div class="skill">
+                        <div class="skill__name"><i class="fa-brands fa-git"></i><span>Git</span></div>
+                        <div class="skill__bar">
+                            <div class="skill__per" per="70%" style="max-width:70%"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <div class="skill__name"><i class="fa-brands fa-react"></i><span>React</span></div>
+                        <div class="skill__bar">
+                            <div class="skill__per" per="30%" style="max-width:30%"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <div class="skill__name"><i class="fa-brands fa-node-js"></i><span>Node.j</span>s</div>
+                        <div class="skill__bar">
+                            <div class="skill__per" per="35%" style="max-width:35%"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <div class="skill__name"><i class="fa-solid fa-pen-nib"></i><span>Photoshop</span></div>
+                        <div class="skill__bar">
+                            <div class="skill__per" per="80%" style="max-width:80%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="projects container spacing" id="projects" data-aos="fade-up">
+            <h3 class="title">Projects</h3>
+            <div class="card">
+                <div class="card__img">
+                    <img src="../img/projects/ecommers.png" alt="e-commerce img">
+                </div>
+                <h3 class="card__title">
+                    e-commerce
+                </h3>
+                <h3 class="card__tech">
+                    <i class="fa-brands fa-html5"></i><i class="fa-brands fa-css3-alt"></i><i
+                        class="fa-brands fa-sass"></i><i class="fa-brands fa-js"></i>
+                </h3>
+                <div class="card__buttons">
+                    <a href="https://github.com/ValentinTarnovsky/proyecto-integrador/tree/main" target="_blank"><i
+                            class="fa-brands fa-github"></i>GitHub</a>
+                    <a href="https://proyecto-integrador-valentin.netlify.app/" target="_blank"><i
+                            class="fa-solid fa-laptop"></i>Demo</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card__img">
+                    <img src="../img/projects/portfolio.png" alt="portfolio img">
+                </div>
+                <h3 class="card__title">
+                    portfolio
+                </h3>
+                <h3 class="card__tech">
+                    <i class="fa-brands fa-html5"></i><i class="fa-brands fa-css3-alt"></i><i
+                        class="fa-brands fa-sass"></i><i class="fa-brands fa-js"></i>
+                </h3>
+                <div class="card__buttons">
+                    <a href=""><i class="fa-brands fa-github"></i>GitHub</a>
+                    <a href=""><i class="fa-solid fa-laptop"></i>Demo</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card__img">
+
+                </div>
+                <h3 class="card__title">
+                    soon...
+                </h3>
+                <h3 class="card__tech">
+                    <i class="fa-solid fa-spinner"></i>
+                </h3>
+                <div class="card__buttons">
+                    <a class="disabled" href="#"><i class="fa-brands fa-github"></i>GitHub</a>
+                    <a class="disabled" href="#"><i class="fa-solid fa-laptop"></i>Demo</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card__img">
+
+                </div>
+                <h3 class="card__title">
+                    soon...
+                </h3>
+                <h3 class="card__tech">
+                    <i class="fa-solid fa-spinner"></i>
+                </h3>
+                <div class="card__buttons">
+                    <a class="disabled" href="#"><i class="fa-brands fa-github"></i>GitHub</a>
+                    <a class="disabled" href="#"><i class="fa-solid fa-laptop"></i>Demo</a>
+                </div>
+            </div>
+            <p>More coming soon...</p>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer__info">
+            <div class="footer__info__copy">
+                <p>Copyright &copy; <a href="#">Valentin Tarnovsky</a></p>
+            </div>
+            <div class="footer__info__media">
+                <p><a href="#"><i class="fa-brands fa-linkedin"></i></a><a href="https://github.com/ValentinTarnovsky"
+                        target="_blank"><i class="fa-brands fa-github"></i></a><a
+                        href="https://www.instagram.com/valentarno_/" target="_blank"><i
+                            class="fa-brands fa-instagram"></i></a></p>
+            </div>
+        </div>
+    </footer>
+    <!--=============== MAIN JS ===============-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

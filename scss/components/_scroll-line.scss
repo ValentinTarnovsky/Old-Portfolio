@@ -1,0 +1,8 @@
+.scroll-line {
+    background: var(--main-color);
+    top: 0;
+    left: 0;
+    height: 2px;
+    position: fixed;
+    transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}

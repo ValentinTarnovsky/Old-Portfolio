@@ -1,0 +1,78 @@
+.card {
+    background-color: var(--black-color-light);
+    width: 20rem;
+    height: 26rem;
+    padding: 1rem;
+    border-radius: 0.3rem;
+    box-shadow: 1px 1px 2px var(--black-color);
+    transition: box-shadow 0.3s;
+    color: var(--white-color);
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    &:hover {
+        box-shadow: 2px 2px 5px var(--black-color);
+    }
+    &__img {
+        border: 1px solid var(--black-color);
+        width: 100%;
+        height: 60%;
+        border-radius: 0.3rem;
+        margin-bottom: 1rem;
+        box-shadow: 2px 2px 4px var(--black-color);
+        // overflow: hidden;
+        object-fit: cover;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: top;
+        }
+    }
+    &__title {
+        text-transform: uppercase;
+        margin-bottom: 0.5rem;
+    }
+    &__tech {
+        font-size: 2rem;
+        color: var(--white-color-2);
+        i {
+            margin-right: 0.5rem;
+            transition: color 0.3s;
+            &:hover {
+                color: var(--white-color);
+            }
+        }
+    }
+    &__buttons {
+        margin-top: auto;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        a {
+            border: 2px solid var(--main-color);
+            border-radius: 0.3rem;
+            text-align: center;
+            font-weight: var(--font-semi-bold);
+            color: var(--white-color);
+            padding: 0.3rem;
+            width: 48%;
+            transition: all 0.3s;
+            &:hover {
+                background-color: var(--black-color-lighten);
+                box-shadow: 1px 1px 3px var(--black-color);
+            }
+            i {
+                margin-right: 0.5rem;
+            }
+        }
+    }
+}
+
+.disabled {
+    color: var(--white-color-2) !important;
+    cursor: default;
+    &:hover {
+        background-color: var(--black-color-light) !important;
+    }
+}
