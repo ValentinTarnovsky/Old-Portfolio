@@ -58,3 +58,66 @@ window.onscroll = () => {
     });
 };
 
+// Light - Dark Theme
+const savedTheme = localStorage.getItem('theme');
+if (savedTheme) {
+    document.body.classList.add(savedTheme);
+    updateThemeIcon(savedTheme === 'light-theme' ? 'ri-sun-fill' : 'ri-moon-fill');
+}
+
+document.getElementById('dark-theme-toggle').addEventListener('click', function () {
+    document.body.classList.remove('light-theme');
+    localStorage.setItem('theme', 'dark-theme');
+    updateThemeIcon('ri-moon-fill');
+});
+
+document.getElementById('light-theme-toggle').addEventListener('click', function () {
+    document.body.classList.add('light-theme');
+    localStorage.setItem('theme', 'light-theme');
+    updateThemeIcon('ri-sun-fill');
+});
+
+function updateThemeIcon(iconClass) {
+    const themeIcon = document.getElementById('theme-icon');
+    themeIcon.className = '';
+    themeIcon.classList.add(iconClass);
+    localStorage.setItem('themeIcon', iconClass);
+}
+
+const savedThemeIcon = localStorage.getItem('themeIcon');
+if (savedThemeIcon) {
+    const themeIcon = document.getElementById('theme-icon');
+    themeIcon.classList.add(savedThemeIcon);
+}
+
+// Auto typing
+
+const targetElement = document.getElementById('auto-typing');
+const texts = ['Web Developer...', 'Freelancer...'];
+let textIndex = 0;
+let charIndex = 0;
+let isDeleting = false;
+
+function typeText() {
+    const currentText = texts[textIndex];
+    if (isDeleting) {
+        targetElement.textContent = currentText.substring(0, charIndex - 1);
+        charIndex--;
+    } else {
+        targetElement.textContent = currentText.substring(0, charIndex + 1);
+        charIndex++;
+    }
+
+    if (!isDeleting && charIndex === currentText.length + 1) {
+        isDeleting = true;
+        setTimeout(typeText, 4000);
+    } else if (isDeleting && charIndex === 0) {
+        isDeleting = false;
+        textIndex = (textIndex + 1) % texts.length;
+        setTimeout(typeText, 500);
+    } else {
+        setTimeout(typeText, 80);
+    }
+}
+
+typeText();

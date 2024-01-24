@@ -16,6 +16,15 @@
     --white-color-2: #ffffff45;
     --body-color: hsl(220, 100%, 97%);
 
+    body.light-theme {
+    --main-color: #f4b944;
+    --black-color: hsl(204, 5%, 82%);
+    --black-color-light: hsl(201, 14%, 75%);
+    --black-color-lighten: hsl(197, 15%, 54%);
+    --white-color: #000;
+    --white-color-2: #00000065;
+    }
+
     // Fonts & size
     --body-font: "Montserrat", sans-serif;
     --normal-font-size: 0.938rem;

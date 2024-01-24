@@ -21,9 +21,16 @@
         &__cont {
             p {
                 text-shadow: 0 2px 3px var(--black-color);
-            }
-            p span {
-                color: var(--main-color);
+                span {
+                    color: var(--main-color);
+                }
+                i {
+                    margin-right: 0.5rem;
+                    font-size: 2.2rem;
+                }
+                #auto-typing {
+                    color: var(--white-color);
+                }
             }
             p:nth-child(1) {
                 font-weight: var(--font-regular);
@@ -67,7 +74,7 @@
             td {
                 padding: 0.5rem 0;
                 text-align: left;
-                height: 20%;
+                height: 3.7rem;
                 width: 50%;
             }
             .item {
@@ -77,6 +84,14 @@
         &__text {
             p {
                 padding: 0.5rem;
+                line-height: 1.3rem;
+                a:visited,
+                a:link {
+                    color: #206eed;
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
             }
         }
     }
@@ -125,11 +140,12 @@
 
         &__bar {
             height: 1rem;
-            background: #282828;
+            background: var(--black-color-lighten);
             border-radius: 3px;
         }
 
         &__per {
+            color: var(--black-color);
             height: 1rem;
             background: var(--main-color);
             border-radius: 3px;
@@ -190,10 +206,12 @@
     gap: 3rem;
     h3 {
         width: 100%;
+        margin-bottom: 0 !important;
     }
     p {
         color: var(--main-color);
         width: 100%;
         text-align: center;
+        font-weight: var(--font-semi-bold);
     }
 }
