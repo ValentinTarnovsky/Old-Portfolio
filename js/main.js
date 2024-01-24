@@ -110,7 +110,7 @@ function typeText() {
 
     if (!isDeleting && charIndex === currentText.length + 1) {
         isDeleting = true;
-        setTimeout(typeText, 4000);
+        setTimeout(typeText, 2000);
     } else if (isDeleting && charIndex === 0) {
         isDeleting = false;
         textIndex = (textIndex + 1) % texts.length;
