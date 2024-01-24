@@ -5,22 +5,18 @@
     padding: 1rem;
     border-radius: 0.3rem;
     box-shadow: 1px 1px 2px var(--black-color);
-    transition: box-shadow 0.3s;
+    transition: box-shadow 0.5s;
     color: var(--white-color);
     display: flex;
     flex-direction: column;
     margin-bottom: 2rem;
-    &:hover {
-        box-shadow: 2px 2px 5px var(--black-color);
-    }
     &__img {
         border: 1px solid var(--black-color);
         width: 100%;
         height: 60%;
         border-radius: 0.3rem;
         margin-bottom: 1rem;
-        box-shadow: 2px 2px 4px var(--black-color);
-        // overflow: hidden;
+        box-shadow: 1px 1px 2px var(--black-color);
         object-fit: cover;
         img {
             width: 100%;
@@ -60,7 +56,6 @@
             transition: all 0.3s;
             &:hover {
                 background-color: var(--black-color-lighten);
-                box-shadow: 1px 1px 3px var(--black-color);
             }
             i {
                 margin-right: 0.5rem;
