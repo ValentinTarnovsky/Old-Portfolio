@@ -258,7 +258,6 @@ a {
   }
 }
 
-/*=============== HEADER ===============*/
 .header {
   position: fixed;
   top: 0;
@@ -268,7 +267,6 @@ a {
   z-index: var(--z-fixed);
 }
 
-/*=============== NAV ===============*/
 .nav {
   height: var(--header-height);
 }
@@ -338,7 +336,7 @@ a {
     padding-top: 1rem;
   }
 }
-.nav__link {
+.nav__link, .nav__linked {
   color: var(--white-color);
   background-color: var(--black-color);
   font-weight: var(--font-semi-bold);
@@ -348,19 +346,17 @@ a {
   align-items: center;
   transition: background-color 0.3s, color 0.3s;
 }
-.nav__link:hover {
+.nav__link:hover, .nav__linked:hover {
   background-color: var(--black-color-light);
   color: var(--main-color);
 }
 
-/* Show menu */
 .show-menu {
   opacity: 1;
   top: var(--header-height);
   pointer-events: initial;
 }
 
-/* Show icon */
 .show-icon .nav__burger {
   opacity: 0;
   transform: rotate(90deg);
@@ -371,7 +367,6 @@ a {
   transform: rotate(90deg);
 }
 
-/*=============== DROPDOWN ===============*/
 .dropdown__item {
   cursor: pointer;
 }
@@ -494,7 +489,7 @@ html {
 .about__cont table td {
   padding: 0.5rem 0;
   text-align: left;
-  height: 3.7rem;
+  height: 4rem;
   width: 50%;
 }
 .about__cont table .item {
@@ -527,6 +522,7 @@ html {
     text-align: center;
   }
   .about__cont table td {
+    height: 2.5rem;
     text-align: center;
   }
 }

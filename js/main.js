@@ -4,14 +4,23 @@ AOS.init();
 // Dropdown Menu
 const showMenu = (toggleId, navId) => {
     const toggle = document.getElementById(toggleId),
-        nav = document.getElementById(navId)
+        nav = document.getElementById(navId);
 
     toggle.addEventListener('click', () => {
-        nav.classList.toggle('show-menu')
-        toggle.classList.toggle('show-icon')
-    })
-}
-showMenu('nav-toggle', 'nav-menu')
+        nav.classList.toggle('show-menu');
+        toggle.classList.toggle('show-icon');
+    });
+
+    const menuLinks = nav.querySelectorAll('.nav__link--close, .dropdown__link');
+    menuLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            nav.classList.remove('show-menu');
+            toggle.classList.remove('show-icon');
+        });
+    });
+};
+
+showMenu('nav-toggle', 'nav-menu');
 
 
 // Animated Scroll line
