@@ -340,7 +340,7 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  transition: background-color 0.3s, color 0.3s;
+  transition: color 0.3s;
 }
 .nav__link:hover, .nav__linked:hover {
   background-color: var(--black-color-light);
