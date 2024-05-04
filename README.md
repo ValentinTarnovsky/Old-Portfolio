@@ -1,4 +1,4 @@
-# Personal Website Project
+# Old Personal Website Project
 
 This is a personal website project I developed during my learning journey in the EducationIT course. Please note that this is an older version, and since then, I have created a newer and improved version.
 
