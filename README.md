@@ -21,5 +21,5 @@ To view the latest and improved version of my personal website, please visit the
 To view the project locally, you can simply clone this repository and open the `index.html` file in your web browser:
 
 ```bash
-git clone [<repository_url>](https://github.com/ValentinTarnovsky/portfolio.git)
+git clone https://github.com/ValentinTarnovsky/portfolio.git
 ```
